@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Lista de Tarefas</title>
+</head>
+<style>
+	body {
+		font-family: Helvetica, sans-serif;
+		text-align: center;
+		background-color: #F0F2F6;
+	}
+	
+	.container {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	h1 {
+		color: #8F514A;
+	}
+	input[type='text'] {
+		margin-top: 10px;
+		width: 100%;
+		background: none;
+		border: 0;
+		border-bottom: 1px solid #8F514A;
+	}
+	
+	button {
+		font-family: Helvetica, sans-serif;
+		padding: 10px;
+		padding-inline: 1rem;
+		border: 0;
+		border-radius: 50px;
+		margin: 10px;
+		background: #8F514A;
+		color: #f3f3f3;
+		font-weight: 700;
+		cursor: pointer;
+	}
+	
+</style>
+<body>
+<div class="container">
+	<h1>Lista de Tarefas</h1>
+	<form method="post" action="ListaTarefas">
+		<p>Digite sua tarefa</p>
+		<input type="text" placeholder="Digite sua tarefa" name="tarefa">
+		<button type="submit">Adicionar Tarefa</button>
+	</form>
+</div>
+</body>
+</html>
